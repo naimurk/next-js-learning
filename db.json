@@ -1,0 +1,36 @@
+{
+    "shoes": [
+        {
+            "id": 1,
+            "title": "Air Max 270",
+            "description": "The Nike Air Max 270 features the biggest heel Air unit yet for a super-soft ride that feels as impossible as it looks.",
+            "price": 71.00
+        },
+        {
+            "id": 2,
+            "title": "Adidas Ultraboost 22",
+            "description": "The Adidas Ultraboost 22 delivers energy return and ultimate comfort with its signature Boost midsole.",
+            "price": 180.00
+        },
+        {
+            "id": 3,
+            "title": "Puma RS-X3",
+            "description": "The Puma RS-X3 takes the Running System to a new level with a dynamic mix of textures and vibrant color blocking.",
+            "price": 110.00
+        },
+        {
+            "id": 4,
+            "title": "Reebok Nano X1",
+            "description": "The Reebok Nano X1 is a versatile shoe, designed for everything from heavy lifting to cardio.",
+            "price": 130.00
+        },
+        {
+            "id": 5,
+            "title": "New Balance 990v5",
+            "description": "The New Balance 990v5 blends timeless style and modern comfort with its premium materials and cushioning.",
+            "price": 175.00
+        }
+    ]
+    
+
+  }

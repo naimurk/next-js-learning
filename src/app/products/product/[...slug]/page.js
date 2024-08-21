@@ -1,6 +1,6 @@
 
 const CatchAllRoutePage = ({params}) => {
-    console.log(params)
+    // console.log(params)
     return (
         <div>
             <h1 className="text-center text-xl">Catch All Routes Page</h1>

@@ -1,23 +1,20 @@
-import Counter from "@/components/Counter";
-import Link from "next/link";
 import React from "react";
 
-const Homepage = async () => {
+const AllShoes = async () => {
   const res = await fetch(`http://localhost:5000/shoes`, {
     // if i wan to catch and it is a SSG
     // cache: "force-cache",
-    next: {
-      revalidate: 5,
-    },
+    // next: {
+    //   revalidate: 5,
+    // },
+    cache: "no-store",
   });
   const shoes = await res.json();
-  // console.log(shoes)
   return (
     <div>
-      <h1 className="text-5xl text-center">Home Page</h1>
-      <Counter></Counter>
+      <h1 className="text-2xl text-center my-2">All Shoes</h1>
       <div className="grid justify-center grid-cols-3 gap-7">
-        {shoes.slice(0, 3).map((item, index) => (
+        {shoes.map((item, index) => (
           <div
             key={item.id}
             className="card bg-base-100 mx-auto w-96 shadow-xl"
@@ -46,13 +43,8 @@ const Homepage = async () => {
           </div>
         ))}
       </div>
-      <div className="text-center my-4">
-        <Link href={'/all-shoes'}>
-          <button className="btn btn-outline btn-primary">See More</button>
-        </Link>
-      </div>
     </div>
   );
 };
 
-export default Homepage;
+export default AllShoes;

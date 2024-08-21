@@ -1,6 +1,9 @@
 import Image from 'next/image';
 import React from 'react';
-import nextJsImage from "../../assets/nexog.png"
+// relative paths
+// import nextJsImage from "../../assets/nexog.png"
+// absolute paths 
+import nextJsImage from "@/assets/nexog.png"
 
 const Gallery = () => {
     return (
